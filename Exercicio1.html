@@ -1,24 +1,36 @@
 
 <!DOCTYPE html>
 <html>
-		<head>
-			<meta charset="UFT-8">
-			<style>
+<head>
+<meta charset="UFT-8">
+		<title>Lista de Presença</title>
+		<style>
 
 			.color-vermelha{		
 				color: red;
 			}
+			.vazio {
+				padding: 10px;
+			}
 
-	        </style>
+			td, th{
+				padding: 5px;
+			}
+
+			table{
+				border-spacing: 0px;
+			}
+
+	         </style>
         </head>
 			
-			<body>
-
-				<center>
-					<table border= 1px solid; cellpadding= 7px; cellspacing= 0>
-					<caption>
- 					<h1>Lista de Presença</h1>
- 					</caption>
+		<body>
+			<center>
+					<table border= "1">
+					<thead>
+					<tr>
+ 					 <th colspan="7"><h1>Lista de Presença</h1></th>
+ 					<tr>
 						<th>Treinee</th>
 						<th>Aula1</th>
 						<th>Aula2</th>
@@ -26,6 +38,8 @@
 						<th>Aula4</th>
 						<th>Aula5</th>
 						<th>Aula6</th>
+					</thead>
+
 					<tbody>
 						<tr>
 						<td>Aluno1</td>
@@ -62,22 +76,22 @@
 						<td><p class='color-vermelha'>Presente</td>
 						<td><p class='color-vermelha'>Presente<br></td>
 					</tr>
-					<tr>
 
 					<tr>
-						<td></td>
+						<td class="vazio" colspan="7"></td>
 					</tr>
 
+				</tbody>
+				<tfoot>
 						<td> Total de Faltas</td>
 						<td><p class='color-vermelha'>1</td>
 						<td><p class='color-vermelha'>1</td>
 						<td><p class='color-vermelha'>1</td>
 						<td><p class='color-vermelha'>1</td>
 						<td><p class='color-vermelha'>1</td>
-						<td><p class='color-vermelha'>1</td>
-					</tr>							
-				</tbody>
-			</table>
-		</center>
-	</body>
+						<td><p class='color-vermelha'>1</td>					
+				</tfoot>			
+	</table>
+	</center>
+</body>
 </html>
